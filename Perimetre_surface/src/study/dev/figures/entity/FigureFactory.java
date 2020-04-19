@@ -25,7 +25,7 @@ public class FigureFactory {
         Figure figure = null;
         switch (type) {
             case  CARRE :
-                float cote = Float.parseFloat(t1.getText());
+                float cote = Float.parseFloat(t2.getText());
                 figure = new Carre(cote);
                 break;
             case RECTANGLE :
@@ -34,7 +34,7 @@ public class FigureFactory {
                 figure = new Rectangle(longueur, largeur);
                 break;
             case CERCLE :
-                float rayon = Float.parseFloat(t1.getText());
+                float rayon = Float.parseFloat(t2.getText());
                 figure = new Cercle(rayon);
                 break;
         }

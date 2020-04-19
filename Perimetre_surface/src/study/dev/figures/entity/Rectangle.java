@@ -3,42 +3,42 @@ package study.dev.figures.entity;
 import study.dev.figures.enumeration.FigureType;
 
 public class Rectangle extends Figure {
-    private long longueur;
-    private long largeur;
+    private float longueur;
+    private float largeur;
 
     public Rectangle() {
         this.setType(FigureType.RECTANGLE);
     }
 
-    public Rectangle(long longueur, long largeur) {
+    public Rectangle(float longueur, float largeur) {
         this.setType(FigureType.RECTANGLE);
         this.longueur = longueur;
         this.largeur = largeur;
     }
 
     @Override
-    public double perimetre() {
-        return 1;
+    public float perimetre() {
+        return 2 * ( longueur + largeur );
     }
 
     @Override
-    public double surface() {
-        return 1;
+    public float surface() {
+        return longueur * largeur ;
     }
 
-    public long getLongueur() {
+    public float getLongueur() {
         return longueur;
     }
 
-    public void setLongueur(long longueur) {
+    public void setLongueur(float longueur) {
         this.longueur = longueur;
     }
 
-    public long getLargeur() {
+    public float getLargeur() {
         return largeur;
     }
 
-    public void setLargeur(long largeur) {
+    public void setLargeur(float largeur) {
         this.largeur = largeur;
     }
 }

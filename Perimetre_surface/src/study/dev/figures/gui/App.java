@@ -7,8 +7,10 @@ import study.dev.figures.enumeration.FigureType;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
-public class App {
+public class App implements ItemListener, ActionListener {
     private JPanel PanelMain;
     private JPanel headerPanel;
     private JPanel LabelPanel;
@@ -22,17 +24,19 @@ public class App {
     private JTextField resultFiled;
 
     public App() {
+        this.chooseTypeComboBox = new JComboBox(new Object[] {"RECTANGLE"});
+        this.chooseTypeComboBox.addItemListener(this);
         perimetreButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Figure figure = FigureFactory.getFigure(FigureType.RECTANGLE);
+                Figure figure = FigureFactory.getFigure(FigureType.RECTANGLE, textField1, textField2);
                 resultFiled.setText(figure.perimetre() + "");
             }
         });
         surfaceButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Figure figure = FigureFactory.getFigure(FigureType.RECTANGLE);
+                Figure figure = FigureFactory.getFigure(FigureType.RECTANGLE, textField1, textField2);
                 resultFiled.setText(figure.surface() + "");
             }
         });
@@ -44,5 +48,15 @@ public class App {
 
     public JPanel getPanelMain() {
         return PanelMain;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
+    @Override
+    public void itemStateChanged(ItemEvent e) {
+
     }
 }

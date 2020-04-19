@@ -9,7 +9,7 @@ public class Application {
         JFrame frame = new JFrame("Mon Gestionnaire de Figure");
         frame.setContentPane(new App().getPanelMain());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBounds(300,300,1000,1000);
+        frame.setSize(500,500);
         frame.pack();
         frame.setVisible(true);
     }

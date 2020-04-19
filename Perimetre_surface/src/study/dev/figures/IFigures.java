@@ -1,6 +1,6 @@
 package study.dev.figures;
 
 public interface IFigures {
-    public void perimetre();
-    public void surface();
+    public double perimetre();
+    public double surface();
 }

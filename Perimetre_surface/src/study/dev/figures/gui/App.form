@@ -64,14 +64,6 @@
             </constraints>
             <properties/>
           </component>
-          <component id="23d7c" class="javax.swing.JButton" binding="perimetreButton">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
           <component id="6f92c" class="javax.swing.JLabel">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
@@ -86,6 +78,14 @@
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
           </hspacer>
+          <component id="23d7c" class="javax.swing.JButton" binding="perimetreButton">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Perimetre"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="7ccde" binding="FieldPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -100,7 +100,9 @@
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <model/>
+            </properties>
           </component>
           <hspacer id="ece0">
             <constraints>
@@ -120,7 +122,7 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Button"/>
+              <text value="Surface"/>
             </properties>
           </component>
           <hspacer id="318a9">

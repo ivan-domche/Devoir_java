@@ -15,13 +15,13 @@ public class Cercle extends Figure {
     }
 
     @Override
-    public void perimetre() {
-
+    public double perimetre() {
+        return 1;
     }
 
     @Override
-    public void surface() {
-
+    public double surface() {
+        return 1;
     }
 
     public double getRayon() {

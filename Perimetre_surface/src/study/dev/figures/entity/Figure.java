@@ -13,20 +13,4 @@ public abstract class Figure implements IFigures {
     public void setType(FigureType type) {
         this.type = type;
     }
-
-    public Figure getFigure(FigureType type) {
-        Figure figure = null;
-        switch (type) {
-            case  CARRE :
-                figure = new Carre();
-                break;
-            case RECTANGLE :
-                figure = new Rectangle();
-                break;
-            case CERCLE :
-                figure = new Cercle();
-                break;
-        }
-        return figure;
-    }
 }
